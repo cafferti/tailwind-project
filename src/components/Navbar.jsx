@@ -14,14 +14,14 @@ const Navbar = () => {
     return ( 
         <div className="max-w-[1240px] h-24 text-white flex justify-between items-center mx-auto">
         <h1 className="w-full font-bold text-[#00df9a]">REACT.</h1>
-        <ul className="flex hidden" >
+        <ul className="hidden md:flex" >
             <li className="p-4">Home</li>
             <li className="p-4">Company</li>
             <li className="p-4">Resourcesw</li>
             <li className="p-4">About</li>
             <li className="p-4">Contact</li>
         </ul>
-        <div onClick={changenav}>
+        <div onClick={changenav} className="block md:hidden">
             { !Nav ? <GiHamburgerMenu size={20}/> : <IoMdClose size={20} /> }
         
 
