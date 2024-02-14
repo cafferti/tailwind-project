@@ -22,11 +22,11 @@ const Navbar = () => {
             <li className="p-4">Contact</li>
         </ul>
         <div onClick={changenav}>
-            { Nav ? <GiHamburgerMenu size={20}/> : <IoMdClose size={20} /> }
+            { !Nav ? <GiHamburgerMenu size={20}/> : <IoMdClose size={20} /> }
         
 
         </div>
-        <div className="fixed left-2 top-0 w-[60%] border-r border-r-gray-900 h-[100%] bg-[#000300]">
+        <div className={Nav ? "fixed left-2 top-0 w-[40%] border-r border-r-gray-900 h-[100%] bg-[#000300] ease-in-out duration-500 " : "fixed left-[-100%] ease-in-out duration-0"}>
         <h1 className="w-full font-bold text-[#00df9a] pt-4 m pb-0 ml-3">REACT.</h1>
 
         <ul className="" >
