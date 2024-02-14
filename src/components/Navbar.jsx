@@ -26,7 +26,7 @@ const Navbar = () => {
         
 
         </div>
-        <div className={Nav ? "fixed left-2 top-0 w-[40%] border-r border-r-gray-900 h-[100%] bg-[#000300] ease-in-out duration-500 " : "fixed left-[-100%] ease-in-out duration-0"}>
+        <div className={Nav ? " md:hidden fixed left-0 top-0 w-[40%] border-r border-r-gray-900 h-[100%] bg-[#000300] ease-in-out duration-500 " : "fixed left-[-100%] ease-in-out duration-0"}>
         <h1 className="w-full font-bold text-[#00df9a] pt-4 m pb-0 ml-3">REACT.</h1>
 
         <ul className="" >
