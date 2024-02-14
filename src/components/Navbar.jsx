@@ -1,8 +1,16 @@
 
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import { IoMdClose } from "react-icons/io";
+import { useState } from "react";
 
 const Navbar = () => {
+ 
+    const [Nav,navhidden] =useState(true)
+
+    const changenav = () =>{
+          navhidden(!Nav)
+    }
+
     return ( 
         <div className="max-w-[1240px] h-24 text-white flex justify-between items-center mx-auto">
         <h1 className="w-full font-bold text-[#00df9a]">REACT.</h1>
@@ -13,8 +21,10 @@ const Navbar = () => {
             <li className="p-4">About</li>
             <li className="p-4">Contact</li>
         </ul>
-        <div>
-        <GiHamburgerMenu size={20} />
+        <div onClick={changenav}>
+            { Nav ? <GiHamburgerMenu size={20}/> : <IoMdClose size={20} /> }
+        
+
         </div>
         <div className="fixed left-2 top-0 w-[60%] border-r border-r-gray-900 h-[100%] bg-[#000300]">
         <h1 className="w-full font-bold text-[#00df9a] pt-4 m pb-0 ml-3">REACT.</h1>
