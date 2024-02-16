@@ -23,7 +23,7 @@ const land = () => {
         Platforms.
       </p>
 
-      <button className="bg-[#00df9a] w-[200px] rounded-md my-6 mx-auto py-3 text-black">Get Started</button>
+      <button className="bg-[#00df9a] w-[200px] rounded-md my-6 mx-auto py-3 text-bl">Get Started</button>
     </div>
   );
 };

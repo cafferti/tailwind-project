@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Land from './components/land'
+import Analytics from './components/Analytics'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,6 +10,7 @@ function App() {
     <div>
       <Navbar/>
       <Land/>
+      <Analytics/>
     </div>
   )
 }
