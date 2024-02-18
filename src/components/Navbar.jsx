@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const Navbar = () => {
  
-    const [Nav,navhidden] =useState(true)
+    const [Nav,navhidden] =useState(false)
 
     const changenav = () =>{
           navhidden(!Nav)
